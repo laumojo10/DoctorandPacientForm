@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!---redenrización de compatibilidad -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!---visualizaciones en diferentes dispositivos -->
+        <link rel="stylesheet" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <title>Formularios</title>
+    </head>
+    <body style="background:linear-gradient(to bottom, hsl(252, 39%, 64%),  hsl(242, 50%, 44%));height: 900.833px;">
+        <h1>Formularios Eps </h1>
+        <section class="formularios">
+            <div class="doctores" id="doctores-lista">
+                <h2>Formulario Doctores</h2>
+                <form id="doctor-form">
+                    <div class="doctor__name">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="nombre" name="name" required maxlength="200">
+                    </div>
+                    <div class="doctor__last-name">
+                        <label for="last-name">Apellido</label>
+                        <input type="text" id="apellido"  name="last-name" required maxlength="200">
+                    </div>
+                    <div class="doctor__list">
+                        <label for="list">Especialidades</label>
+                            <select id="especialidad" name="especialidad">
+                                <option value=" Seleccione">Seleccione especialidad</option>
+                                <option value="Medicina General">Medicina general</option>
+                                <option value="Cardiología">Cardiología</option>
+                                <option value="Medicina Interna">Medicina interna</option> 
+                                <option value="Dermatología">Dermatología</option>
+                                <option value="Rehabilitación Física">Rehabilitación física</option>
+                                <option value="Psocilogía">Psicología</option>
+                                <option value="Odontología">Odontología</option>
+                                <option value="Radiología">Radiología</option>    
+                            </select>
+                    </div>
+                    <div class="doctor__consulting_room">
+                        <label for="consulting">Consultorio</label>
+                        <input type="text" id="consultorio" name="consulting" maxlength="3"required>
+                    </div>
+                    <div class="doctor__email">
+                        <label for="email">Correo de contacto</label>
+                        <input type="email" id="correo" name="email" maxlength="80" required>
+                    </div>
+                    <div class="doctor__button">
+                        <button type="submit"><Span style="font-weight: bold;">Enviar</Span></button>
+                    </div>   
+                </form>
+            </div>
+            <div class="pacientes" id="pacientes-lista" style="margin-top: 35px;">
+                <h2>Formulario Pacientes</h2>
+                <form id="paciente-form">
+                    <div class="patient__name">
+                        <label for="patient_name">Nombre</label>
+                        <input type="text" id="nombre_paciente" name="name" maxlength="200" required>
+                    </div>
+                    <div class="patient__lastname">
+                        <label for="last-name">Apellido</label>
+                        <input type="text" id="apellido_paciente" name="last-name" maxlength="200"required>
+                    </div>
+                    <div class="patient__id">
+                        <label for="id">Cedula</label>
+                        <input type="text" id="cedula_paciente" name="id" maxlength="12" required>
+                    </div>
+                    <div class="patient__age">
+                        <label for="edad">Edad</label>
+                        <input type="edad" id="edad" name="edad" maxlength="2" required>
+                    </div>
+                    <div class="patient__phone">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono" maxlength="10" required>
+                    </div>
+                    <div class="patient__list">
+                        <label for="list">Especialidades</label>
+                        <select id="especialidad" name="especialidad">
+                            <option value=" Seleccione">Seleccione especialidad</option>
+                            <option value="Medicina General">Medicina general</option>
+                            <option value="Cardiología">Cardiología</option>
+                            <option value="Medicina Interna">Medicina interna</option> 
+                            <option value="Dermatología">Dermatología</option>
+                            <option value="Rehabilitación Física">Rehabilitación física</option>
+                            <option value="Psocilogía">Psicología</option>
+                            <option value="Odontología">Odontología</option>
+                            <option value="Radiología">Radiología</option>    
+                        </select>
+                    </div>
+
+                    <div class="patient__button">
+                        <button type="submit"><Span style="font-weight: bold;">Enviar</Span></button>
+                    </div>
+                </form>
+            </div>  
+        </section>    
+        <!-- Enlazar archivo de script externo -->
+        <script src="script.js"></script>
+    </body>
+</html>
